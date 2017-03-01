@@ -1,0 +1,36 @@
+*{padding: 0px; margin: 0px; font-family: "Times New Roman", Georgia, Serif;}
+
+nav.navbar.navbar-default {
+    margin-bottom: 0px;
+    background: #27ae60;
+    border: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+a#logo_header div {
+    float: left;
+    margin-right: 10px;
+}
+
+#logo_header span i.fa.fa-futbol-o {
+    font-size: 47px;
+    line-height: 20px;
+}
+
+.bar_header {
+    padding-bottom: 6px;
+    padding-top: 6px;
+    background: #27ae60;
+}
