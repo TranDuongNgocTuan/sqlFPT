@@ -1,8 +1,21 @@
-*{padding: 0px; margin: 0px; font-family: "Times New Roman", Georgia, Serif;}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('Montserrat.eot'); /* IE9 Compat Modes */
+  src: url('Montserrat.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('Montserrat.woff') format('woff'), /* Modern Browsers */
+  url('Montserrat.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('Montserrat.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+*{padding: 0px; margin: 0px; font-family: 'Montserrat', sans-serif;}
+
+body{
+    background-color: #EDEFF4;
+}
 
 nav.navbar.navbar-default {
     margin-bottom: 0px;
-    background: #27ae60;
+    background: #2da05e;
     border: none;
 }
 
@@ -11,6 +24,8 @@ nav.navbar.navbar-default {
     font-size: 1.2em;
     font-weight: 700;
     text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 17px;
 }
 
 .navbar-default .navbar-brand {
@@ -22,15 +37,101 @@ nav.navbar.navbar-default {
 a#logo_header div {
     float: left;
     margin-right: 10px;
+    font-size: 16px;
 }
 
 #logo_header span i.fa.fa-futbol-o {
-    font-size: 47px;
-    line-height: 20px;
+    font-size: 57px;
+    line-height: 33px;
 }
 
 .bar_header {
-    padding-bottom: 6px;
-    padding-top: 6px;
-    background: #27ae60;
+    background: #2da05e;
+}
+
+.top_header {
+    background-color: rgba(47, 58, 49, 0.82);
+    color: #616161;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.top_header .row div{
+    color: #CDCDCD;
+}
+.top_header .row div i.fa {margin-right: 11px;}
+
+span#fc {
+    color: rgba(255, 22, 22, 0.84);
+    font-family: Arial;
+    font-size: 2.4em;
+}
+
+ul.nav.navbar-nav.navbar-right li {padding-top: 4px;padding-bottom: 4px;}
+
+ul.nav.navbar-nav.navbar-right li:hover     {
+    background: #16a085;
+    border-bottom: 3px solid rgb(218, 54, 37);
+}
+ul.nav.navbar-nav.navbar-right li a{
+    color: white
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: white;
+}
+
+.carousel-caption {
+    top: 40%;
+}
+
+.carousel-caption p {
+    font-size: 179%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+a.btn_slide.btn_slide.btn.btn-lg.btn-primary {
+    font-size: 124%;
+    padding: 5px 19px;
+    text-transform: uppercase;
+    font-weight: 800;
+    background: #ea1616;
+    border-color: #de4444;
+}
+
+span.main_content {
+    color: rgb(7, 103, 253);
+}
+
+.carousel-control {
+    width: 7%;
+}
+
+div#content_home {
+    padding-top: 3%;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.title_info {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: white;
+    border-left: 5px solid #2da05e;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-bottom: 3%;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.col-xs-12.col-sm-12.col-md-12.col-lg-12.img_info {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+img.img-responsive {}
+
+img.img_tintuc.img-responsive {
+    border-radius: 5px;
+    height: 410px;
+    width: 100%;
 }
