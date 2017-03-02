@@ -9,6 +9,18 @@
 </head>
 <body>
 	<header>
+		<div class="top_header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-push-8 col-md-2">
+						<i class="fa fa-phone"></i>0123456789
+					</div>
+					<div class="col-md-push-8 col-md-2">
+						<i class="fa fa-globe" aria-hidden="true"></i>Viet Nam
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="bar_header">
 			<div class="container">		
 				<nav class="navbar navbar-default" role="navigation">
@@ -27,7 +39,7 @@
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse navbar-ex1-collapse">
 							<ul class="nav navbar-nav navbar-right">
-								<li><a class="navbar-brand" href="#">HOME</a></li>
+								<li><a href="#">HOME</a></li>
 								<li><a href="#">Đặt Sân</a></li>
 								<li><a href="#">Shop</a></li>
 								<li><a href="#">Tin Tức</a></li>
@@ -45,53 +57,61 @@
 					</nav>
 				</div>
 			</div>
-			<div class="container">		
-				<div class="row">
-					<div class="slide_header_background">
-						<!-- <img src="img/background.png" class="img-responsive"> -->
-						<div class="sologan-pitch">
-							<span>Thỏa sức cùng trái bóng </br> trở thành cầu thử chuyên nghiệp</span>
+		</div>
+		<div id="carousel-id" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-id" data-slide-to="0" class=""></li>
+				<li data-target="#carousel-id" data-slide-to="1" class=""></li>
+				<li data-target="#carousel-id" data-slide-to="2" class="active"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item">
+					<img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="img/001_xxlp.jpg" class="img-responsive">
+					<div class="container">
+						<div class="carousel-caption">
+							<p>Hãy tìm tới <span class="main_content">chúng tôi</span> nơi các bạn thỏa sức hòa mình vào trái bóng. Chúng tôi luôn chào đón bạn.</p><a class="btn_slide btn btn-lg btn-primary" href="#" role="button">Read</a></p>
 						</div>
-						<div class="slide">
-							<div class="container">
-								<div class="row">
-									<div class="hidden-sm col-md-4">
-										<span class="tag_info">Tin Tức</span>
-										<span class="info_silde"></span>
-										<span class="info_date">Thỏa sức cùng trái bóng </br> trở thành cầu thử chuyên nghiệp</span>
-									</div>
-									<div class="hidden-sm col-md-4">
-										<span class="tag_info">Tin Tức</span>
-										<span class="info_silde"></span>
-										<span class="info_date">Thỏa sức cùng trái bóng </br> trở thành cầu thử chuyên nghiệp</span>
-									</div>
-									<div class="hidden-sm col-md-4">
-										<span class="tag_info">Tin Tức</span>
-										<span class="info_silde"></span>
-										<span class="info_date">Thỏa sức cùng trái bóng </br> trở thành cầu thử chuyên nghiệp</span>
-									</div>
-								</div>
-							</div>
+					</div>
+				</div>
+				<div class="item">
+					<img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide" src="img/s-banner2.jpg" class="img-responsive">
+					<div class="container">
+						<div class="carousel-caption">
+							<p>Hãy tìm tới <span class="main_content">chúng tôi</span> nơi các bạn thỏa sức hòa mình vào trái bóng. Chúng tôi luôn chào đón bạn.</p><a class="btn_slide btn btn-lg btn-primary" href="#" role="button">Read</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="item active">
+					<img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide" src="img/couseral.JPG" class="img-responsive">
+					<div class="container">
+						<div class="carousel-caption">
+							<p>Hãy tìm tới <span class="main_content">chúng tôi</span> nơi các bạn thỏa sức hòa mình vào trái bóng. Chúng tôi luôn chào đón bạn.</p><a class="btn_slide btn btn-lg btn-primary" href="#" role="button">Read</a></p>
 						</div>
 					</div>
 				</div>
 			</div>
+			<a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+			<a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 		</div>
 	</header>
-	<content>
+	<div id="content_home">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-md-8">
-					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 title_info">
 						<span>Tin Tức</span>
-						<span>Khuyến mãi</span>
-						<span>Sự kiện</span>
 					</div>
-					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-						<img src="img/san_bong_da_mini.jpg" class="img-responsive">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 img_info">
+						<img src="img/san_bong_da_mini.jpg" class="img_tintuc img-responsive ">
+						
+						<div class="carousel-caption">
+							<p>Khai trương <span class="main_content">tưng bừng</span></p><a class="btn_slide btn btn-lg btn-primary" href="#" role="button">Read</a></p>
+						</div>
+
 					</div>
+
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-						<img src="img/san_bong_da_mini.jpg" class="img-responsive">
+						<img src="img/san_bong_da_mini.jpg" class="img_tintuc img-responsive">
 					</div>
 				</div>
 				<div class="col-xs-12 col-md-4">
@@ -106,7 +126,7 @@
 				</div>
 			</div>
 		</div>
-	</content>
+	</div>
 	<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
 	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 </body>
