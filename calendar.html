@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<!-- calendar css -->
+	<link rel="stylesheet" type="text/css" href="css/calendar.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/font-awesome.min.css">
+	<!-- font Roboto -->
+	<link rel="stylesheet" type="text/css" href="font/roboto.css">
+	<!-- Ionicons -->
+	<link rel="stylesheet" href="css/ionicons.min.css">
+	<!-- daterange picker -->
+	<link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+	<!-- bootstrap datepicker -->
+	<link rel="stylesheet" href="plugins/datepicker/datepicker3.css">
+	<!-- Bootstrap time Picker -->
+	<link rel="stylesheet" href="plugins/timepicker/bootstrap-timepicker.min.css">
+	<!-- Select2 -->
+	<link rel="stylesheet" href="plugins/select2/select2.min.css">
+</head>
+<body>
+	<header>
+		<div class="top_header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-push-8 col-md-2">
+						<i class="fa fa-phone"></i>0123456789
+					</div>
+					<div class="col-md-push-8 col-md-2">
+						<i class="fa fa-globe" aria-hidden="true"></i>Viet Nam
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bar_header">
+			<div class="container">		
+				<nav class="navbar navbar-default" role="navigation">
+					<div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#" id="logo_header"><div><span id="fc">FC</span> PITCH</div><span><i class="fa fa-futbol-o" aria-hidden="true"></i></span></a>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse navbar-ex1-collapse">
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="#">Trang Chủ</a></li>
+								<li><a href="#">Đặt Sân</a></li>
+								<li><a href="#">Cưa Hàng</a></li>
+								<li><a href="#">Tin Tức</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li><a href="#">Separated link</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="bar_search">
+			<form class="form-inline">
+				<div class="box box-primary ">
+					<div class="box-body">
+						<!-- Date -->
+
+						<div class="form-group col-md-2 col-md-offset-2">
+
+							<div class="input-group date">
+								<div class="btn_success input-group-addon">
+									<i class="fa fa-calendar"></i>
+								</div>
+								<!-- Date picker -->
+								<input type="text" class="form-control" id="datepicker">
+							</div>
+							<!-- /.input group -->
+						</div>
+						<!-- /.form group -->
+						<div class="form-group col-md-2">
+							<div class="input-group date">
+								<div class="btn_success input-group-addon">
+									<i class="fa fa-clock-o"></i>
+								</div>
+								<select class="form-control select2" style="width: 100%;">
+									<option selected="selected">Giờ Đá</option>
+									<option>9h:30</option>
+									<option>5h:40</option>
+									<option>5:40</option>
+									<option>9h:30</option>
+								</select>
+							</div>
+						</div>
+
+						<!-- /.form group -->
+						<div class="form-group col-md-2">
+							<div class="input-group date">
+								<div class="btn_success input-group-addon">
+									<i class="fa fa-soccer-ball-o"></i>
+								</div>
+								<select class="form-control select2" style="width: 100%;">
+									<option selected="selected">Loại Sân</option>
+									<option>Sân 5</option>
+									<option>Sân 7</option>
+								</select>
+							</div>
+						</div>
+						<!-- /.form group -->
+					</div>
+					<!-- /.box-body -->
+				</div>
+				<div class="col-md-2">
+					<button type="submit" class="btn btn-primary">Tìm Sân</button>
+				</div>
+			</form>
+		</div>
+	</header>
+	<content>
+		<div class="container" id="schedule">
+			<table class="table table-striped table-hover">
+				<thead>
+					<tr>
+						<td id="thoigian"><!-- <span id="thoigian">Thoi gian</span><span id="san">San</span> -->TG</td>
+						<td>San A</td>
+						<td>San B</td>
+						<td>San C</td>
+						<td>San D</td>
+						<td>San E</td>
+					</tr>	
+				</thead>
+				<tbody>
+					<tr>
+						<td>9-10h</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>9-10h</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>9-10h</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>9-10h</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>9-10h</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>9-10h</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>9-10h</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>9-10h</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>9-10h</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>9-10h</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					
+				</tbody>
+			</table>
+		</div>
+		<div class="btn btn-info btn-lg pay" data-toggle="modal" data-target="#myModal">
+			<div id="button_pay">Đặt Sân</div>
+			<div id="icon_shedule"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+		</div>
+		<!-- Modal -->
+		<div id="myModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Modal Header</h4>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="hidden-xs col-md-12">
+								<table class="table">
+									<h4>Sân Đặt</h4>
+									<thead>
+										<tr>
+											<td>San</td>
+											<td>Thoi gian</td>
+											<td>Tien</td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>San A</td>
+											<td>Thoi gian</td>
+											<td>Tien</td>
+										</tr>
+										<tr>
+											<td>Tong tien</td>
+											<td></td>
+											<td>80000<sup>đ</sup></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col-md-12">
+								<h4>Dịch Vụ</h4>
+								<div class="col-md-6 service">
+									<select class="form-control select2" style="width: 100%;">
+										<option selected="selected">---- Dịch vu đi kèm ---</option>
+										<option>Áo đá banh</option>
+										<option>Nước khoán</option>
+										<option>Banh đá</option>
+									</select>
+
+								</div>
+								<div class="col-md-4 service">
+									<input type="text" name="quantity" class="form-control">
+								</div>
+								<div class="col-md-2">
+									<button type="button" class="btn btn-default btn_default"><i class="fa fa-plus"></i></button>
+								</div>
+								
+								<table class="table">
+									<thead>
+										<tr>
+											<td>Vich vu</td>
+											<td>So luong</td>
+											<td>Tien</td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Ao bong da</td>
+											<td>5</td>
+											<td>80000<sup>đ</sup></td>
+										</tr>
+										<tr>
+											<td>Tong tien</td>
+											<td></td>
+											<td>80000<sup>đ</sup></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div id="menu_right">
+			<div class="info_bill">
+				<div class="container">
+					<div class="row">
+						<div class="title_bill">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<div><span id="fc">Football soCcer</span><span id="pitch">Pitch</span></div><span><i class="fa fa-futbol-o" aria-hidden="true"></i></span>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="col-md-4 col-md-offset-4">
+								Ngày đặt:
+							</div>
+							<div class="col-md-4">
+								14/02/2017
+							</div>
+						</div>
+						<table>
+							<h4>Hóa Đơn</h4>
+							<thead>
+								<tr>
+									<td>Sân</td>
+									<td>Thời gian</td>
+									<td>Tiền</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>San A</td>
+									<td>9h-10h</td>
+									<td>15000<sup>đ</sup></td>
+								</tr>
+								<tr>
+									<td>San A</td>
+									<td>9h-10h</td>
+									<td>15000<sup>đ</sup></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</content>
+
+	<!-- jQuery -->
+	<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+	<!-- Bootstrap -->
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<!-- date-range-picker -->
+	<script src="js/moment.min.js"></script>
+	<!-- Select2 -->
+	<script src="plugins/select2/select2.full.min.js"></script>
+	<!-- bootstrap daterangepicker -->
+	<script src="plugins/daterangepicker/daterangepicker.js"></script>
+	<!-- bootstrap datepicker -->
+	<script src="plugins/datepicker/bootstrap-datepicker.js"></script>
+	<!-- bootstrap time picker -->
+	<script src="plugins/timepicker/bootstrap-timepicker.min.js"></script>
+	<script type="text/javascript" src="js/calendar.js"></script>
+	<script>
+		$(function (){
+		    //Initialize Select2 Elements
+		    $(".select2").select2();
+			//Date picker
+			$('#datepicker').datepicker({
+				autoclose: true
+			});
+		});
+	</script>
+</body>
+</html>
